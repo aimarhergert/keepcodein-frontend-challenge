@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import { FiCheckCircle } from "react-icons/fi";
 
 const inputClasses =
   "w-full px-4 py-2 mt-2 text-white rounded-full bg-transparent formBorder-gradient focus:outline-none focus:ring-0 placeholder:text-gray-500";
@@ -62,7 +63,8 @@ const ContactUs = () => {
             </div>
 
             {submitted && (
-              <div className="mb-6 px-4 py-3 rounded-lg bg-green-500/15 border border-green-500/40 text-green-300 text-sm">
+              <div className="mb-6 flex items-center gap-2 px-4 py-3 rounded-lg bg-green-500/15 border border-green-500/40 text-green-300 text-sm">
+                <FiCheckCircle size={18} />
                 Message sent successfully! We'll get back to you shortly.
               </div>
             )}
