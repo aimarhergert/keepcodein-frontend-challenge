@@ -41,6 +41,13 @@
       "react-app/jest"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "swiper/react": "<rootDir>/src/test-utils/swiperReactMock.js",
+      "swiper/modules": "<rootDir>/src/test-utils/swiperModulesMock.js",
+      "swiper/css": "<rootDir>/src/test-utils/swiperCssMock.css"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
