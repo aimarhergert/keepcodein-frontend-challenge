@@ -33,7 +33,7 @@ const faqs = [
 
 const FAQs = () => {
     return (
-        <div className='container mx-auto'>
+        <div id='faqs' className='container mx-auto'>
             <div className='xl:px-32 lg:px-20 lg:flex '>
                
                     <div className="mx-auto lg:w-1/2  px-6 py-24 sm:py-32 lg:px-8 lg:py-32 ">

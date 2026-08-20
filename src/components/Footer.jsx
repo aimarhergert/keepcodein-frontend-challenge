@@ -4,7 +4,6 @@ import { RiFacebookFill } from "react-icons/ri";
 import { FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { VscGithub } from "react-icons/vsc";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
 const Footer = () => {
@@ -63,19 +62,19 @@ const Footer = () => {
                             <p className="font-medium text-xl text-white px-5 md:px-0">Company</p>
                                 <ul className="mt-6 space-y-4 text-sm text-white px-8 md:px-0">
                                     <li>
-                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer "> Recent NBews </span>
+                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer "> <a href="#case-studies">Recent News</a> </span>
                                     </li>
                                     <li>
-                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer "> Testimonials  </span>
+                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer "> <a href="#why-choose-us">Testimonials</a>  </span>
                                     </li>
                                     <li>
-                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer ">     <AnchorLink  offset='100' href='#about'>About Us </AnchorLink> </span>
+                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer ">     <a href="#about">About Us</a> </span>
                                     </li>
                                     <li>
-                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer "> Contact Us </span>
+                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer "> <a href="#contact">Contact Us</a> </span>
                                     </li>
                                     <li>
-                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer "> Help Center & FAQs </span>
+                                    <span   className="text-gray-400 text-[17px] hover:text-[#6318F1]   hover:opacity-75 cursor-pointer "> <a href="#faqs">Help Center & FAQs</a> </span>
                                     </li>
                                 </ul>
                             </div>

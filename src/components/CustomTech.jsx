@@ -63,15 +63,15 @@ const CustomTech = () => {
           <p> Enhance your digital presence, or revolutionize your industry.</p>
           <div className='flex justify-center gap-4'>
             <div className="">
-              <button class="px-6 py-2 bg-gradient-to-r from-[#FC466B]/60 to-[#3F5EFB]/60 text-white font-semibold rounded-full transition-transform transform-gpu  hover:shadow-lg hover:scale-110">
+              <a href="#contact" className="px-6 py-2 bg-gradient-to-r from-[#FC466B]/60 to-[#3F5EFB]/60 text-white font-semibold rounded-full transition-transform transform-gpu  hover:shadow-lg hover:scale-110">
                 Apply Now
-              </button>
+              </a>
             </div>
 
             <div className="bg-gradient-to-r p-[1px] from-[#FC466B] to-[#3F5EFB] rounded-full">
-              <button class="px-6 py-2 bg-[#110D2E] rounded-full text-white font-semibold  transition-transform transform-gpu  hover:shadow-lg hover:bg-gradient-to-r hover:from-[#FC466B]/40 hover:to-[#3F5EFB]/40 hover:scale-110 duration-150">
+              <a href="#case-studies" className="px-6 py-2 bg-[#110D2E] rounded-full text-white font-semibold  transition-transform transform-gpu  hover:shadow-lg hover:bg-gradient-to-r hover:from-[#FC466B]/40 hover:to-[#3F5EFB]/40 hover:scale-110 duration-150">
                 Explore More
-              </button>
+              </a>
             </div>
           </div>
         </div>
