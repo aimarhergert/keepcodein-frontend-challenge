@@ -62,7 +62,7 @@ const CaseStudiesBoard = () => {
   const isFailed = status === "failed";
 
   return (
-    <div id="case-study" className="container mx-auto px-6 lg:px-32 py-16">
+    <div id="case-studies" className="container mx-auto px-6 lg:px-32 py-16">
       <div className="relative overflow-hidden">
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-[#6318F1]/20 blur-[120px] rounded-full pointer-events-none" />
 
@@ -74,12 +74,12 @@ const CaseStudiesBoard = () => {
             </span>
             <span className="h-px w-10 bg-gradient-to-l from-transparent to-[#8B7CF6]" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-center">
             Case{" "}
             <span className="bg-gradient-to-r from-[#FC466B] to-[#3F5EFB] bg-clip-text text-transparent">
               Studies
             </span>
-          </h1>
+          </h2>
           <p className="max-w-2xl text-center text-gray-400">
             Real projects, real results. Filter by category or search to see
             what we ship.
@@ -95,7 +95,7 @@ const CaseStudiesBoard = () => {
               <button
                 key={category}
                 onClick={() => dispatch(setCategory(category))}
-                className={`px-4 py-1.5 rounded-full text-sm transition-all duration-200 ${
+                className={`px-4 py-2 rounded-full text-sm transition-all duration-200 ${
                   active
                     ? "bg-gradient-to-r from-[#6318F1] to-[#3F5EFB] text-white shadow-lg shadow-[#6318F1]/40 scale-105 border border-transparent"
                     : "bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10"
@@ -114,6 +114,7 @@ const CaseStudiesBoard = () => {
             value={filters.query}
             onChange={(e) => dispatch(setQuery(e.target.value))}
             placeholder="Search case studies..."
+            aria-label="Search case studies"
             className="w-full pl-11 pr-4 py-2.5 rounded-full bg-white/5 border border-white/10 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#6318F1]/60 focus:ring-2 focus:ring-[#6318F1]/30 transition-all"
           />
         </div>
@@ -129,7 +130,7 @@ const CaseStudiesBoard = () => {
       </div>
 
       <div
-        key={`${filters.category}-${filters.query}`}
+        key={filters.category}
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 animate-fade-in"
       >
         {isLoading &&

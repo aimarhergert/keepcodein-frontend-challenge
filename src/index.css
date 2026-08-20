@@ -6,6 +6,19 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-fade-in,
+  .shimmer,
+  .animate-cloud,
+  .animate-round,
+  .animate-zoom {
+    animation: none !important;
+  }
+}
+
 ::selection {
   background: rgba(99, 24, 241, 0.6);
   color: #fff;

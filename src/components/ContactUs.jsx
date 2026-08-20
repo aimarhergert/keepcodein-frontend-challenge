@@ -74,10 +74,12 @@ const ContactUs = () => {
                 <div className="col-span-2 lg:col-span-1">
                   <input
                     type="text"
+                    id="contact-name"
                     value={values.name}
                     onChange={handleChange("name")}
                     className={inputClasses}
                     placeholder="Full Name"
+                    aria-label="Full Name"
                   />
                   {errors.name && (
                     <p className="mt-1 ml-2 text-xs text-[#FC466B]">{errors.name}</p>
@@ -87,10 +89,12 @@ const ContactUs = () => {
                 <div className="col-span-2 lg:col-span-1">
                   <input
                     type="email"
+                    id="contact-email"
                     value={values.email}
                     onChange={handleChange("email")}
                     className={inputClasses}
                     placeholder="Your Email"
+                    aria-label="Your Email"
                   />
                   {errors.email && (
                     <p className="mt-1 ml-2 text-xs text-[#FC466B]">{errors.email}</p>
@@ -100,19 +104,23 @@ const ContactUs = () => {
                 <div className="col-span-2">
                   <input
                     type="text"
+                    id="contact-subject"
                     value={values.subject}
                     onChange={handleChange("subject")}
                     className={inputClasses}
                     placeholder="Select Subject"
+                    aria-label="Select Subject"
                   />
                 </div>
                 <div className="col-span-2">
                   <textarea
+                    id="contact-message"
                     value={values.message}
                     onChange={handleChange("message")}
                     className={inputClasses}
                     placeholder="Message..."
                     rows={5}
+                    aria-label="Message"
                   />
                   {errors.message && (
                     <p className="mt-1 ml-2 text-xs text-[#FC466B]">{errors.message}</p>

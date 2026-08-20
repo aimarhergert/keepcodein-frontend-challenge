@@ -64,12 +64,12 @@ const WhyChooseUs = () => {
           </span>
           <span className="h-px w-10 bg-gradient-to-l from-transparent to-[#8B7CF6]" />
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-center">
           Why{" "}
           <span className="bg-gradient-to-r from-[#FC466B] to-[#3F5EFB] bg-clip-text text-transparent">
             Choose Us
           </span>
-        </h1>
+        </h2>
         <p className="max-w-xl text-center text-gray-400">
           The reasons teams trust us with their most important builds.
         </p>

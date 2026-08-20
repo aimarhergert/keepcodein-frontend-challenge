@@ -56,7 +56,7 @@ export default function Header() {
 
                     className="rounded-md px-3 py-2 font-medium text-sm 2xl:text-lg text-gray-300 hover:text-[#6318F1] cursor-pointer hover:scale-105 duration-200 "
                   >
-                    <AnchorLink offset={10} href='#case-study' className='text-nowrap'>Case Studies</AnchorLink>
+                    <AnchorLink offset={10} href='#case-studies' className='text-nowrap'>Case Studies</AnchorLink>
                   </div>
                   <div
 
